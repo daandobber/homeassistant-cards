@@ -1,0 +1,42 @@
+type: horizontal-stack
+cards:
+  - type: custom:button-card
+    entity: sensor.yoursensor
+    name: GFT
+    icon: mdi:recycle
+    show_label: true
+    label: |
+      [[[
+        const days = entity.attributes.Days_until;
+        return days === 1 ? 'Morgen' : days === 0 ? 'Vandaag' : days + ' dagen';
+      ]]]
+  - type: custom:button-card
+    entity: sensor.yoursensor
+    name: Papier
+    icon: mdi:file
+    show_label: true
+    label: |
+      [[[
+        const days = entity.attributes.Days_until;
+        return days === 1 ? 'Morgen' : days === 0 ? 'Vandaag' : days + ' dagen';
+      ]]]
+  - type: custom:button-card
+    entity: sensor.yoursensor
+    name: PMD
+    icon: mdi:bottle-soda-classic-outline
+    show_label: true
+    label: |
+      [[[
+        const days = entity.attributes.Days_until;
+        return days === 1 ? 'Morgen' : days === 0 ? 'Vandaag' : days + ' dagen';
+      ]]]
+  - type: custom:button-card
+    entity: sensor.yoursensor
+    name: Restafval
+    icon: mdi:delete-empty
+    show_label: true
+    label: |
+      [[[
+        const days = entity.attributes.Days_until;
+        return days === 1 ? 'Morgen' : days === 0 ? 'Vandaag' : days + ' dagen';
+      ]]]
